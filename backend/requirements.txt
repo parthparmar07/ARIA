@@ -1,0 +1,9 @@
+# ARIA Backend — FastAPI + Claude Sonnet 4
+# Run from this directory: uvicorn main:app --reload --port 8000
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+anthropic>=0.34.0
+pydantic>=2.7.0
+redis>=5.0.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
