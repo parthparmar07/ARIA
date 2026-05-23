@@ -4,7 +4,7 @@ from __future__ import annotations
 import asyncio
 from typing import AsyncGenerator
 
-from anthropic import AsyncAnthropic
+from groq import AsyncGroq
 
 from agents.coach_agent import CoachAgent
 from agents.evaluator_agent import EvaluatorAgent
@@ -14,7 +14,7 @@ from session_store import SessionStore
 
 
 class AgentOrchestrator:
-    def __init__(self, client: AsyncAnthropic, store: SessionStore):
+    def __init__(self, client: AsyncGroq, store: SessionStore):
         self.client = client
         self.store = store
         self.interviewer = InterviewerAgent(client)
